@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { LivraisonComponent } from './livraison/livraison.component';
 import { LivreurComponent } from './livreur/livreur.component';
 import { AchatComponent } from './achat/achat.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AchatComponent } from './achat/achat.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    MatButtonModule
 
   ],
   providers: [],
