@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'debut';
+  isSidebarActive: boolean = false;
+
   toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    if (sidebar) {
-      sidebar.classList.toggle('active');
-    }
+    this.isSidebarActive = !this.isSidebarActive;
   }
+
+
+
 }
