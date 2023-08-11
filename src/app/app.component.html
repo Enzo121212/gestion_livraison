@@ -41,6 +41,48 @@
 
       <div class="container-fluid">
         <router-outlet></router-outlet>
+            <!-- <p>
+                Parent money {{ myMoney }}
+                <button class="btn btn-primary" (click)="addMoney()">+</button>
+             </p>
+
+            <app-child [money]="myMoney" (takeMoney)="getMoney($event)" >
+                TITLE
+                <div name> OSKAR FAILLING </div>
+                <div class="description">Je suis dans mon classe et alorsSD GQDGQS SEG QES</div>
+                <div lien> VENTES </div>
+            </app-child> -->
+<!-- 
+            template referecne
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" [(ngModel)]="name" #monInput placeholder="name@example.com">
+            </div>
+
+            <button class="btn btn-primary p-2" (click)="valider(monInput)">Valider</button> -->
+
+            <!-- TEMPLATE DRIVENS FORMS -->
+            <!-- <form  #infoForm="ngForm" (ngSubmit)="save(infoForm)" >
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="mail" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">password</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="*****" name="mdp" ngModel>
+                </div>
+                <button type="submit" class="btn btn-primary">Valider</button>
+            </form> -->
+
+
+            <!-- REACTIVE FORM -->
+            <form  [formGroup]="informationForm" (ngSubmit)="saveReactive()" >
+                <input type="text" class="form-control" formControlName="name">
+                <input type="number"class="form-control"formControlName="year">
+                <button type="submit" class="btn btn-primary">Valider</button>
+            </form> 
+
+            
       </div>
 
   </div>

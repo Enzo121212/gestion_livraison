@@ -1,0 +1,15 @@
+<button class="btn btn-danger" (click)="emitEvent()">Enfant take money </button>
+
+<div class="card">
+    <h5 class="card-header">
+        <ng-content></ng-content>
+    </h5>
+    <h5 class="card-title"><ng-content select="[name]"> </ng-content></h5>
+    <p class="card-text"><ng-content select=".description"></ng-content></p>
+    <a href="#" class="btn btn-primary"><ng-content select="[lien]"></ng-content></a>
+    <!-- <div class="card-body">
+      <h5 class="card-title"><ng-content select="[name]"> </ng-content></h5>
+      <p class="card-text"><ng-content class="description"></ng-content></p>
+      <a href="#" class="btn btn-primary"><ng-content lien></ng-content></a>
+    </div> -->
+  </div>

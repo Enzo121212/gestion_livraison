@@ -35,7 +35,6 @@ export class SidebarComponent implements OnInit {
   }
 
   isActive(menuItem: any): boolean {
-    console.log("ROUTE",this.router.url);
     return this.router.url === menuItem.path;
 
   }
