@@ -10,6 +10,10 @@ import { LivraisonComponent } from './livraison/livraison.component';
 import { LivreurComponent } from './livreur/livreur.component';
 import { AchatComponent } from './achat/achat.component';
 import {MatButtonModule} from '@angular/material/button';
+import { CardDashboardComponent } from './card-dashboard/card-dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -18,14 +22,18 @@ import {MatButtonModule} from '@angular/material/button';
     SidebarComponent,
     LivraisonComponent,
     LivreurComponent,
-    AchatComponent
+    AchatComponent,
+    DashboardComponent,
+    CardDashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatDividerModule,
 
   ],
   providers: [],
